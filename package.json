@@ -1,0 +1,18 @@
+{
+  "name": "bleterm2",
+  "version": "1.0.0",
+  "description": "Basic BLE terminal for interacting with devices using Nordic UART or similar services.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Schneider",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "noble": "^1.9.0"
+  },
+  "bin": {
+    "bleterm2": "index.js"
+  }
+}
