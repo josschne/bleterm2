@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var noble = require('noble');
 
 var argv = require('minimist')(process.argv.slice(2));
@@ -5,6 +6,7 @@ var argv = require('minimist')(process.argv.slice(2));
 //Must provide the target device name as an argument
 if (argv._.length != 1) {
   printHelp();
+  process.exit(0);
 }
 
 var deviceName = argv._[0].toLowerCase();
@@ -97,4 +99,8 @@ if (process.stdin.isTTY && process.stdout.isTTY) {
       }
     }
   });
+}
+
+function printHelp() {
+  console.log('Usage: bleterm2 [-serviceUUID "xxxx..."] [-charUUIDs "xxxx..","xxxx.."] <device name>');
 }
