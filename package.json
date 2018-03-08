@@ -1,6 +1,6 @@
 {
   "name": "bleterm2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Basic BLE terminal for interacting with devices using Nordic UART or similar services.",
   "main": "index.js",
   "repository": "https://github.com/josschne/bleterm2",
