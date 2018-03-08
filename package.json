@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Basic BLE terminal for interacting with devices using Nordic UART or similar services.",
   "main": "index.js",
+  "repository": "https://github.com/josschne/bleterm2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
