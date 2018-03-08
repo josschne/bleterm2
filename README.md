@@ -18,3 +18,5 @@ OR with custom service UUID or characteristic UUIDs
 `bleterm2 --serviceUUID "xxxx..." --charUUIDS "xxxx...","xxxx..." <device name>`
 
 Type CTRL-D to exit.
+
+###### Built while working on client project for [Punch Through](https://punchthrough.com)
