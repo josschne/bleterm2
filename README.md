@@ -15,6 +15,6 @@ Simple. Minimal dependencies.
 
 OR with custom service UUID or characteristic UUIDs
 
-`bleterm2 --serviceUUID "xxxx..." --charUUIDS "xxxx...","xxxx..."`
+`bleterm2 --serviceUUID "xxxx..." --charUUIDS "xxxx...","xxxx..." <device name>`
 
 Type CTRL-D to exit.

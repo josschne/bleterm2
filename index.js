@@ -16,7 +16,6 @@ var serviceUUID = (argv.serviceUUID && argv.serviceUUID.split(',')) || ["6e40000
 
 //Optionally provide the rx/tx UUIDs with comma-separated -characteristicUUID "xxxx...xxxx","xxxx...xxxx"
 var characteristicUUIDs = (argv.charUUIDs && argv.charUUIDs.split(',')) || [];
-console.log(`Chars: ${JSON.stringify(characteristicUUIDs)}`);
 
 noble.on('stateChange', function(state) {
   if (state === 'poweredOn') {
