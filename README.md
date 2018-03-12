@@ -4,6 +4,8 @@ BLE terminal for Nordic UART Service devices and similar.
 
 Simple. Minimal dependencies.
 
+Requires nodejs v6 or greater.
+
 ## Installation
 
 `npm install -g bleterm2`
