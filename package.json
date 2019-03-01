@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "minimist": "^1.2.0",
-    "noble": "^1.9.0"
+    "noble-mac": "github:Timeular/noble-mac"
   },
   "bin": {
     "bleterm2": "index.js"

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var noble = require('noble');
+var noble = require('noble-mac');
 
 var argv = require('minimist')(process.argv.slice(2));
 
@@ -19,7 +19,7 @@ var characteristicUUIDs = (argv.charUUIDs && argv.charUUIDs.split(',')) || [];
 
 noble.on('stateChange', function(state) {
   if (state === 'poweredOn') {
-    console.log(`Scanning for ${deviceName}...`);
+    console.log(`Scanning for ${deviceName}... (Ctrl-D to stop)`);
     noble.startScanning();
   } else {
     console.log('Scanning stopped - is Bluetooth adapter connected / turned on?');
@@ -90,7 +90,7 @@ if (process.stdin.isTTY && process.stdout.isTTY) {
         process.exit(0);
       }
       if (uartWriteChar) {
-        uartWriteChar.write(data, function(err) {
+        uartWriteChar.write(data, false, function(err) {
           if (err) {
             console.error(`Failed to write data to write characteristic: ${err}`);
           }
